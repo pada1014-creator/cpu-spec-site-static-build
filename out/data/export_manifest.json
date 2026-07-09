@@ -1,0 +1,51 @@
+{
+  "dataset": "AMD Ryzen / Zen CPU specs and benchmark export",
+  "phase": "Phase 11 Final Delivery",
+  "generated_from_workbook": "Processor_Specifications_Zen_Generation_20260708_CPU_ID_Phase10_Website_Claude_Export.xlsx",
+  "tables": [
+    {
+      "source_sheet": "Export_CPU_Specs",
+      "csv_file": "export_cpu_specs.csv",
+      "json_file": "export_cpu_specs.json",
+      "row_count": 238,
+      "column_count": 40
+    },
+    {
+      "source_sheet": "Export_Benchmark_Web",
+      "csv_file": "export_benchmark_web.csv",
+      "json_file": "export_benchmark_web.json",
+      "row_count": 816,
+      "column_count": 16
+    },
+    {
+      "source_sheet": "Export_Benchmark_Official",
+      "csv_file": "export_benchmark_official.csv",
+      "json_file": "export_benchmark_official.json",
+      "row_count": 1822,
+      "column_count": 17
+    }
+  ],
+  "primary_keys": {
+    "Export_CPU_Specs": [
+      "CPU_ID"
+    ],
+    "Export_Benchmark_Web": [
+      "Benchmark_Web_ID"
+    ],
+    "Export_Benchmark_Official": [
+      "Benchmark_Official_ID"
+    ]
+  },
+  "join_rules": [
+    "Export_Benchmark_Web.CPU_ID joins to Export_CPU_Specs.CPU_ID.",
+    "Export_Benchmark_Official.CPU_ID joins to Export_CPU_Specs.CPU_ID when Website Include = Yes.",
+    "Website Include = Inventory Only means official-only inventory; do not create a full CPU page until specs are added."
+  ],
+  "chart_rules": [
+    "Use Export_Benchmark_Web for Web Median / Mixed Power charts.",
+    "Use Export_Benchmark_Official for official TDP profile charts.",
+    "Do not mix Web Median / Mixed Power and Official TDP Profile scores without clear labels.",
+    "Official charts must include Official Power Profile as filter or legend."
+  ],
+  "column_policy": "CSV/JSON preserve exact Excel export column names and order."
+}
