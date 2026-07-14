@@ -1,2 +1,2 @@
-:HL["/_next/static/chunks/15bi-llz2yu9w.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"cpu","param":null,"prefetchHints":0,"slots":{"children":{"name":"id","param":{"type":"d","key":"AMD_RYZEN_7_PRO_8845HS","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"ncJ_pd2k-WwMqWHXab_ry"}
+:HL["/_next/static/chunks/212aagj2a_39k.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"cpu","param":null,"prefetchHints":0,"slots":{"children":{"name":"id","param":{"type":"d","key":"AMD_RYZEN_7_PRO_8845HS","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"S057NFvA0fviMCRCZf3pz"}
