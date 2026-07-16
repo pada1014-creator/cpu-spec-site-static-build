@@ -1,2 +1,0 @@
-:HL["/_next/static/chunks/212aagj2a_39k.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"cpu","param":null,"prefetchHints":0,"slots":{"children":{"name":"id","param":{"type":"d","key":"AMD_RYZEN_AI_MAX_PRO_385","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"S057NFvA0fviMCRCZf3pz"}
