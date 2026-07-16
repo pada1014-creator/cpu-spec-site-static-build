@@ -1,2 +1,0 @@
-:HL["/_next/static/chunks/37s0pc9eo76lp.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"cpu","param":null,"prefetchHints":0,"slots":{"children":{"name":"id","param":{"type":"d","key":"AMD_RYZEN_3_2200U","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"C0ONxPjlr5dRBTHnAEykP"}
