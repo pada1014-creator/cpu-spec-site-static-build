@@ -455,10 +455,17 @@ function jsonResponse(obj, status = 200) {
 // Worker returns (login page, API responses, and proxied static assets).
 // ---------------------------------------------------------------------------
 
+// Keep in sync with src/lib/version.ts's APP_VERSION on every release — this
+// lets you verify which build is actually being served (via curl -I or the
+// Network tab's Response Headers) even if a caching layer is suspected,
+// without needing to scroll to the page footer.
+const APP_VERSION = "1.0.0730.03";
+
 function decorate(response, path, { authed = false } = {}) {
   const headers = new Headers(response.headers);
   headers.set("X-Robots-Tag", "noindex, nofollow, noarchive");
   headers.set("X-Content-Type-Options", "nosniff");
+  headers.set("X-App-Version", APP_VERSION);
 
   if (authed) {
     // Content-hashed Next.js chunks are safe to cache in the individual
